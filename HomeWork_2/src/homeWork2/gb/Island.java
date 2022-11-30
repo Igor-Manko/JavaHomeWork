@@ -39,10 +39,10 @@ class Island {
     public static int maxAreaOfIsland(int[][] grid) {
 
         int maxArea = 0;
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[i].length; j++) {
-                if (grid[i][j] == 1) {
-                    maxArea = Math.max(maxArea, dfs(grid, i, j));
+        for (int m = 0; m < grid.length; m++) {
+            for (int n = 0; n < grid[m].length; n++) {
+                if (grid[m][n] == 1) {
+                    maxArea = Math.max(maxArea, dfs(grid, m, n));
                 }
             }
         }
