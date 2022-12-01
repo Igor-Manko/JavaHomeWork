@@ -1,3 +1,9 @@
+package homeWork2.gb;
+
+import javax.swing.tree.TreeNode;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,8 +19,8 @@
  * }
  * }
  */
-class Solution {
-    List<String> list = new ArrayList<String>();
+public class TreePath {
+    List<String> list = new ArrayList<>();
 
     public List<String> binaryTreePaths(TreeNode root) {
         String s = "";
