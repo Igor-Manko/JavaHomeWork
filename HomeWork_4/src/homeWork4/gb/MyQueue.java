@@ -1,8 +1,10 @@
+package homeWork4.gb;
+
 import java.util.Stack;
 
 /*
 Input
-["MyQueue", "push", "push", "peek", "pop", "empty"]
+["homeWork4.gb.MyQueue", "push", "push", "peek", "pop", "empty"]
 [[], [1], [2], [], [], []]
 Output
 [null, null, null, 1, 1, false]
