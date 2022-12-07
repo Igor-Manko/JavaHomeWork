@@ -37,7 +37,8 @@ class Matrix_0_1 {
                 int first = temp[0];
                 int second = temp[1];
 
-                if (first >= 0 && second >= 0 && first < rows && second < columns && !visited[first][second] && matrix[first][second] != 0) {
+                if ((first >= 0) && (second >= 0) && (first < rows) && (second < columns)
+                        && !visited[first][second] && (matrix[first][second] != 0)) {
                     visited[first][second] = true;
                     matrix[first][second] = steps;
                     queue.add(new int[] {first-1,second} );
