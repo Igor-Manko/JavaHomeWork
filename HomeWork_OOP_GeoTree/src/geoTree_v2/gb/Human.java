@@ -6,8 +6,58 @@ public class Human implements GeoTree {
     String lastName;
     int age;
     String country;
-    int gender;
+    private int gender;
     int idPerson;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        System.out.print("Раньше firstName было: " + getFirstName() +" -->> ");
+        this.firstName = firstName;
+        System.out.println("Заменили на: " + firstName);
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    private int getGender() {
+        return gender;
+    }
+
+    private void setGender(int gender) {
+        this.gender = gender;
+    }
+
+    public int getIdPerson() {
+        return idPerson;
+    }
+
+    public void setIdPerson(int idPerson) {
+        this.idPerson = idPerson;
+    }
 
     /**
      * @param gender    0 - мужчина, 1 - женщина
@@ -24,10 +74,8 @@ public class Human implements GeoTree {
         this.age = age;
         this.country = country;
         this.gender = gender;
-       this.idPerson = idPerson;
-
+        this.idPerson = idPerson;
     }
-
 
     public String MyPrint() {
 
@@ -42,11 +90,10 @@ public class Human implements GeoTree {
     }
 
     @Override
-    public void printUserGeoTree() {
+    public void printInfoUserGeoTree() {
         System.out.println(MyPrint());
     }
 
-    @Override
     public String genderStatus() {
         if (this.gender == 0) {
             return "Мужчина";
@@ -55,5 +102,4 @@ public class Human implements GeoTree {
         }
         return "Ошибка";
     }
-
 }
